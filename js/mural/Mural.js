@@ -12,6 +12,17 @@ const Mural = (function(_render, Filtro){
 
     Filtro.on("filtrado", render)
 
+
+    function preparaCartao(cartao){
+        cartao.on("mudanca.**", salvaCartoes)
+        cartao.on("remocao", ()=>{
+            cartoes = cartoes.slice(0)
+            cartoes.splice(cartoes.indexOf(cartao),1)
+            salvaCartoes()
+            render()
+        })
+    }
+    
     function pegaCartoesUsuario(){
         let cartoesLocal  = JSON.parse( localStorage.getItem(nameUser))
 
@@ -23,15 +34,6 @@ const Mural = (function(_render, Filtro){
 
     }
 
-    function preparaCartao(cartao){
-        cartao.on("mudanca.**", salvaCartoes)
-        cartao.on("remocao", ()=>{
-            cartoes = cartoes.slice(0)
-            cartoes.splice(cartoes.indexOf(cartao),1)
-            salvaCartoes()
-            render()
-        })
-    }
 
     function salvaCartoes(){
          localStorage.setItem(nameUser, JSON.stringify( 
