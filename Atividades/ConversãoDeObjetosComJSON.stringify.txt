@@ -1,0 +1,10 @@
+Conversão de objetos com JSON.stringify
+
+Nesse capítulo tivemos alguns problemas ao salvar os cartões no localStorage. Descobrimos que a função JSON.stringify poderia converter nossa lista de cartões num texto pronto para ser salvo no localStorage. Se chamarmos a função JSON.stringify diretamente na lista de cartões do mural, qual será o resultado?
+
+
+Uma lista com vários objetos sem nenhuma propriedade.
+ 
+Uma lista com vários objetos sem nenhuma propriedade
+Nossos cartões não são objetos literais do JavaScript, ou seja eles não foram criados com a sintaxe de {conteudo: "conteudo do cartão"}. Eles são criados pela função construtora Cartao e o objeto que é retornado pela função não tem as propriedades conteudo e tipo enumeráveis.
+Para visualizar o que isso significa podemos criar um cartão pelo console do navegador da seguinte maneira let cartao = new Cartao("conteudo do cartão aqui"). Execute em seguida console.log(cartao) e note que as propriedades conteudo e tipo não aparecem no resultado.

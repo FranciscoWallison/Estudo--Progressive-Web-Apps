@@ -1,0 +1,4 @@
+Em js/mural/Mural.js precisamos armazenar a lista de cartões sempre que um cartão for adicionado, removido ou alterado.
+É importante lembrar de carregar os cartões salvos quando a página for recarregada e logo após, executar a função render para que eles apareçam no mural.
+
+Dica: Para evitar duplicar código, crie uma função salvaCartoes que seja executada sempre que um cartão é adicionado, removido ou alterado. Essa função deve pegar todos os cartões e salvar seu conteúdo e tipo no localStorage.

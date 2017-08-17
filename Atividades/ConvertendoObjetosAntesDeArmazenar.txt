@@ -1,0 +1,43 @@
+Convertendo objetos antes de armazenar
+
+Abra qualquer site pelo Chrome e acesse o Console pelo Dev Tools. No console, converta a seguinte lista de objetos listaPessoasdo javascript em texto e salve-a no localStorage. Confirme que a lista foi salva olhando diretamente para o localStorage no Dev Tools do navegador. Após isso resgate esse texto do localStorage e converta-o novamente em objeto ou lista do javascript!
+
+
+
+let pessoaA = {nome: 'Artur'}
+let pessoaB = {nome: 'Batista'}
+let pessoaC = {nome: 'Cláudio'}
+
+let listaPessoas = [pessoaA, pessoaB, pessoaC]
+
+===========================================================================================================================
+
+R:
+
+Para converter em texto é necessário usar a função JSON.stringify e para recuperar o valor original do texto a função JSON.parse.
+
+
+
+
+let pessoaA = {nome: 'Artur'}
+let pessoaB = {nome: 'Batista'}
+let pessoaC = {nome: 'Cláudio'}
+
+let listaPessoas = [pessoaA, pessoaB, pessoaC]
+
+let listaComoTexto = JSON.stringify(listaPessoas)
+
+localStorage.setItem("lista", listaComoTexto)
+========================
+
+Na aba Application do Dev Tools no Chrome deve ser possível verificar que os dados foram salvos no localStorage.
+
+O seguinte código será responsável por resgatar a lista
+===================
+
+
+
+let listaComoTextoResgatada = localStorage.getItem("lista")
+
+let listaResgatada = JSON.parse(listaComoTextoResgatada)
+
