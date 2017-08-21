@@ -1,0 +1,6 @@
+Qual o nome correto do arquivo de manifest do Application Cache?
+
+
+O nome não importa
+ 
+O nome do arquivo de manifest não irá mudar a forma como o Application Cache funciona.O atributo manifest que colocamos na tag <html> precisa apontar para algum arquivo de manifest válido, 

@@ -1,0 +1,6 @@
+Por que conteúdos dinâmicos como as imagens dos cartões, que mudam pra cada usuário, são complicado para armazenar com o AppCache?
+
+
+Pois o manifest é o mesmo para todos os usuários da app em todo o mundo e teríamos que servir um arquivo de manifest diferente para cada usuário já que arquivos de imagens diferentes teriam que ser listados na seção CACHE do manifest.
+ 
+O App Cache não consegue adicionar arquivos ao cache que não estejam listados no manifest. Isso significa que previamente precisamos saber todos os arquivos que serão cacheados para cada usuário para listá-los no manifest. Isso que exige código no servidor para gerar esse arquivo. Ou seja, só com tecnologia front-end, não conseguimos adicionar arquivos dinamicamente no App Cache.

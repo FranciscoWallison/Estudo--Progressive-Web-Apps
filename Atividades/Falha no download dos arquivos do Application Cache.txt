@@ -1,0 +1,15 @@
+O que ocorre caso o download de um arquivo falhe durante a inicialização do AppCache?
+
+
+
+
+O App Cache mostra mensagens de erro no console
+ 
+Para evitar inconsistências, o App Cache só é usado caso todos os arquivos tenham sido baixados com sucesso. Um erro no download de um arquivo compromete toda a instalação do Application Cache. Mensagens de erro são disparadas no console do navegador. Em um novo carregamento da página o App Cache tentará ser instalado novamente.
+
+
+
+
+O App Cache não é criado
+ 
+Para evitar inconsistências, o App Cache só é usado caso todos os arquivos tenham sido baixados com sucesso. Um erro no download de um arquivo compromete toda a instalação do Application Cache. Mensagens de erro são disparadas no console do navegador. Em um novo carregamento da página o App Cache tentará ser instalado novamente.

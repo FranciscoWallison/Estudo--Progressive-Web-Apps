@@ -1,0 +1,25 @@
+Sobre a API Cache Storage é correto dizer que:
+
+
+As instruções para abrir um cache caches.open e adicionar um arquivo ao cache cache.put são assíncronas e por isso o valor retornado por ambas é uma Promise.
+ 
+Uma Promise é uma forma de representar informações que só são acessíveis de forma assíncrona. Como elas fazem parte da linguagem javascript, as novas APIs que precisam lidar com dados assíncronos fazem forte uso das promises.
+
+
+
+caches é o nome da variável que é a porta de entrada para o Cache Storage
+ 
+Todas as funções da API Cache Storage se encontram dentro da variável caches
+
+
+
+
+Ela armazena não só o conteúdo do arquivo, mas toda a resposta que o servidor daquele arquivo enviou, incluindo todos os cabeçalhos do HTTP.
+ 
+O que salvamos na verdade é mais do que o conteúdo do arquivo. Armazenamos toda a resposta que o servidor enviou. Com a resposta inteira do servidor em mãos podemos futuramente simular que a resposta veio do servidor quando na verdade veio do Cache Storage. Esta aí um dos poderes do Cache Storage que utilizaremos nas próximas aulas.
+
+
+
+O Cache Storage organiza os arquivos cacheados em vários caches que sempre devem ter um nome
+ 
+Para armazenar qualquer arquivo no Cache Storage é necessário abrir ou criar um cache com a instrução caches.open("nome do cache") pois todo arquivo cacheado deve ser colocado cache.

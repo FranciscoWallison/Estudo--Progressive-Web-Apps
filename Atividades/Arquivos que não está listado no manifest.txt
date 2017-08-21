@@ -1,0 +1,11 @@
+Por padrão o que acontece quando nossa app tenta carregar um recurso/arquivo que não está listado no manifest?
+
+
+O recurso só será baixado se adicionarmos a url dos arquivos na seção NETWORK do manifest.
+ 
+Todos os pedidos de arquivos externos passam pelo Application Cache, até mesmo os pedidos de arquivos que não estão listados no manifest. Se o arquivo não for encontrado no manifest, ele não será carregado, mesmo se tivermos conexão com a internet. Para permitir que arquivos externos sejam carregados da internet é necessário apontar pra esses arquivos na seção NETWORK do manifest.
+
+
+O recurso não é baixado pois não faz parte do App Cache
+ 
+Todos os pedidos de arquivos externos passam pelo Application Cache, até mesmo os pedidos de arquivos que não estão listados no manifest. Se o arquivo não for encontrado no manifest, ele não será carregado, mesmo se tivermos conexão com a internet. Para permitir que arquivos externos sejam carregados da internet é necessário apontar pra esses arquivos na seção NETWORK do manifest.

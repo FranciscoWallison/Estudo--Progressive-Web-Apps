@@ -1,0 +1,6 @@
+Quando listamos arquivos no manifest do Application Cache, esses arquivos serão baixados e o navegador sempre utilizará a versão baixada pelo Application Cache automaticamente. No caso do Cache Storage, o que acontecerá por padrão quando o navegador tentar carregar uma imagem que já está armazenada no Cache Storage?
+
+
+O navegador não sabe que deve procurar no Cache Storage então vai fazer o pedido da imagem para o servidor normalmente.
+ 
+O Cache Storage é uma API do navegador que se limita à criação e manutenção do Cache. Alterar a forma como o navegador carrega os arquivos e dizer que as imagens devem vir do cache e não da rede é papel de uma outra API chamada Service Workers

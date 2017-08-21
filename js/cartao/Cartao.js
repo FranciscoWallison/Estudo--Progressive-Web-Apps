@@ -96,9 +96,7 @@ const Cartao = (function(_render, EventEmitter, TiposCartao){
     }
 
     Cartao.pegaImagens = cartao => {
-        return (cartao.conteudo.match(/\!\[(.+?)\]\((.+?)\)/g) || []).map(imagemMD => {
-            return imagemMD.match(/\!\[.+?\]\((.+?)\)/)[1] || null
-        })
+        return (cartao.conteudo.replace(/\!|\[|\(|\]|\)/g , "") || [])
     }
 
     return Cartao

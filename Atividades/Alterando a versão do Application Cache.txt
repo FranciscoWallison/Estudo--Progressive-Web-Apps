@@ -1,0 +1,6 @@
+Para que alterações em nossos arquivos sejam carregadas no Application Cache, o que deve ser feito?
+
+
+O arquivo de manifest precisa ser alterado de alguma maneira, mesmo que não adicionemos nenhum arquivo novo.
+ 
+O App Cache só será novamente carregado se o arquivo de manifest sofrer alguma alteração. Se nós apenas modificamos o conteúdo de um arquivo que já estava listado no manifest, precisamos de alguma forma alterar esse arquivo de manifest. Um método muito usual é adicionar um comentário no formato #numero indicando uma versão do App Cache. Sempre que quisermos atualizar o cache, podemos aumentar o numero dessa versão no comentário.

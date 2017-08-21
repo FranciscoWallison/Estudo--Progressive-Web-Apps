@@ -1,0 +1,7 @@
+Como podemos simular que estamos offline para testar nossas novas funcionalidades?
+
+
+
+Selecionando a opção Offline na aba Network do dev tools
+ 
+Exatamente! Esse é um dos jeitos mais simples de simular que estamos offline.
