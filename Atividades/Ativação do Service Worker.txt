@@ -1,0 +1,7 @@
+Após alterarmos o arquivo de um Service Worker e recarregarmos nossa app no navegador é possível ver que o Service Worker novo foi instalado. Depois da instalação, o que acontece com os Service Workers?
+
+
+
+O Service Worker mais novo é instalado, porém permanece desativado (sem uso) até que todas as abas do navegador que estejam abertas na app sejam fechadas.
+ 
+Todo Service Worker é instalado automaticamente quando seu arquivo é atualizado. Porém, a versão nova permanece desativada (sem uso) até que todas as abas do navegador que estejam abertas na app sejam fechadas. Quem decide quando um Service Worker será ativado é ou o navegador ou o desenvolvedor (é possível por exemplo, ativar um Service Worker pelo Developer Tools). Um mesmo Service Worker só terá uma versão ativada ao mesmo tempo.

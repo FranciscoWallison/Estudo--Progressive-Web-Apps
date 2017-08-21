@@ -1,0 +1,13 @@
+Como os Service Workers permitirão que nossa app funcione offline?
+
+
+Com o Service Worker será possível dizer ao navegador quando ele deve pegar as informações do Cache Storage e quando ele deve pegar da rede ou do servidor.
+ 
+Um dos poderes de um Service Worker é poder interceptar todos os pedidos/requests que o navegador fizer. Com esse poder podemos dizer para o navegador usar as respostas que já armazenamos no Cache Storage ao invés de se conectar na rede e pedir a resposta para um servidor.
+
+
+
+
+Poderemos baixar os arquivos da app no Cache Storage durante o processo de instalação do Service Worker.
+ 
+Dentro de um Service Worker temos acesso à uma API poderosa, acessar o Cache Storage no processo de instalação permitirá baixarmos todos os arquivos que precisamos na primeira vez que abrimos a app.

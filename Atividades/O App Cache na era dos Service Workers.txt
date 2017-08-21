@@ -1,0 +1,6 @@
+Porque nossa app não funcionava mais offline mesmo com o Application Cache totalmente configurado?
+
+
+Pois os Service Workers juntamente com o Cache Storage substituem totalmente o Application Cache.
+ 
+O poder dos Service Workers em conjunto com o Cache Storage permite fazer muito mais coisas em relação ao Application Cache. O Application Cache é automaticamente desativado quando um Service Worker é registrado.

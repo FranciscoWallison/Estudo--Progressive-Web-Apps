@@ -1,0 +1,5 @@
+Todas as respostas de arquivos que nossa app pede vêm do Service Worker, pois estamos ouvindo o evento fetch e executando a função event.respondWith. O que acontece se nesse evento nós apenas respondermos com o que acharmos no Cache Storage?
+
+As respostas de arquivos que não forem encontradas no Cache Storage serão dadas como vazias, ou seja, esses arquivos pedidos e não cacheados não serão carregados.
+ 
+Se uma resposta de arquivo não é achada no Cache Storage, teremos uma resposta vazia e nada de erros. No nosso caso que temos apenas cache de imagens, qualquer outro arquivo não será encontrado, e para o browser não poderá ser carregado.

@@ -1,0 +1,7 @@
+Agora que guardamos todas as respostas de arquivos no Cache Storage, começamos a organizar os caches por nomes. Temos o cache ceep-imagens e o cache ceep-arquivos. Como podemos buscar uma resposta em ambos os caches de uma só vez?
+
+
+
+É possível utilizando a função caches.match.
+ 
+Se a busca por respostas de arquivos não for específica para um cache, podemos utilizar a função caches.match que irá procurar em todos os caches.
