@@ -1,0 +1,6 @@
+Caso algum arquivo seja renomeado, será necessário alterar o seu nome em todos os lugares que apontavam pra ele. Como exemplo, um arquivo css renomeado teria que ter seu nome alterado na tag <link> também. Para que o arquivo renomeado seja salvo no Cache Storage, será necessário também mudar seu nome na instalação do Service Worker. Qual o problema de apenas alterarmos o nome de um arquivo se mantivéssemos nosso código como estava?
+
+
+O arquivo antigo continua armazenado no Cache Storage, ocupando espaço da memória do usuário.
+ 
+Como o arquivo tem um nome diferente, temos também uma entrada diferente no Cache Storage. A entrada com o nome antigo permanece armazenada e ocupando espaço da memória do usuário.

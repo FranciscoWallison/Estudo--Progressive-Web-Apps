@@ -1,0 +1,5 @@
+Que tipo de inconsistência poderia ocorrer caso atualizássemos os caches no evento de install do Service Worker?
+
+Algumas abas já abertas anteriormente permaneceriam com as versões antigas da app.
+ 
+Caso o Service Worker tenha sido atualizado e uma nova aba seja aberta na app, essa nova aba detectará que deve instalar o Service Worker mais novo. Isso não acontecerá com as abas já abertas. O que fará com que versões diferentes rodem no mesmo navegador.

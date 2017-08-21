@@ -1,0 +1,6 @@
+Uma das soluções para atualizar o código da app e evitar a presença de arquivos antigos e sem uso no cache é deletar o cache antigo e criá-lo de novo cacheando apenas os arquivos necessários. Caso sempre deletássemos o cache ceep-arquivos e logo após criássemos ele novamente cacheando apenas os arquivos novos, qual problema poderia acontecer?
+
+
+Poderíamos acabar sem nenhum cache e nossa app deixaria de funcionar offline.
+ 
+Se deletarmos o cache não temos como recuperá-lo. Logo após a deleção, se algo falhar no momento em que os arquivos são cacheados novamente, não haverá nenhum cacha disponível. Nosso Service Worker passará a buscar os arquivos do servidor apenas e app deixará de funcionar offline.
