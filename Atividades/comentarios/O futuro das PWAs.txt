@@ -1,0 +1,10 @@
+Vimos bastante conteúdo até agora: mexemos em localStorage para armazenamento dos cartões, em "Application Cache" para que a app funcionasse offline, vimos como evoluir as funcionalidades offline com Service Workers e Cache Storage. Se continuassemos falando sobre as PWAs (ou Progressive Web Apps), teríamos muitos outros assuntos, já que elas são bem poderosas e estão sendo desenvolvidas a cada dia.
+Parte deste poder vem de suas próprias especificações, especialmente no que diz respeito aos Service Workers e Cache Storages. Vimos recentemente como atualizar a aplicação ouvindo o evento de activate, começamos a olhar para a app e para o Service Worker como algo versionado, então, começamos a fazer versões dos nossos arquivos, atualizando-os apenas quando a app fosse ativada.
+
+Vimos que o código da ativação, em service-worker.js, é executado quando todas as abas forem fechadas, ou seja, o site não está aberto mas, "por baixo dos panos", o Chrome está atualizando a aplicação. Isto é um sinal de que o Service Worker é de fato muito poderoso, pois temos uma parte do site sendo rodada sem que ele esteja aberto. Várias especificações que estão por vir e ainda não estão bem estabelecidas vão trabalhar muito com esta característica.
+
+Agora que temos um código que pode ser executado "por trás", enquanto o site está fechado, teremos algumas funcionalidades, como por exemplo notificações. Poderemos recebê-las, mostrando-as ao usuário sem que ele esteja com a página aberta.
+
+Outras funcionalidades em desenvolvimento irão surgir para quando o navegador estiver fechado, como a sincronização de arquivos com o servidor, por exemplo. Não precisamos fazer isto apenas quando o usuário está acessando a página. São funcionalidades que têm a ver com arquivos sendo rodados em background, em planos de fundo, possibilitados a partir dos Service Workers.
+
+É bom que estas novas especificações e todas as evoluções dos Service Workers sejam vistas após o término deste curso, pois há muito por vir. Muito obrigado por ter acompanhado este curso, foi um prazer, e espero que nos vejamos em outros, aqui na Alura. Até a próxima!
