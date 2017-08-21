@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-#v1
+#v9
 
 CACHE:
 css/estilos.css
@@ -13,6 +13,7 @@ css/loginStatus.css
 css/cartao.css
 css/novoCartao.css
 css/mural.css
+js/sw/registrar.js
 js/lib/jquery.js
 js/lib/eventemitter2.js
 js/lib/KeyBoardNavigation.js
