@@ -1,0 +1,11 @@
+Como o Service Worker nos permite interceptar os pedidos de arquivos que o navegador faz e acessar suas informações?
+
+
+É possível acessar as informação do pedido feito pelo navegador através da propriedade event.request.
+ 
+Dentro do evento de fetch, podemos obter as informações do pedido através do parâmetro que recebemos no Event Listener. O parâmetro é comumente chamado de event e é possível acessar todas as informações pelaa sua propriedade request.
+
+
+É possível ouvir o evento de 'fetch'.
+ 
+É possível executar um código sempre que o navegador pede algum arquivo. Basta transfomar esse código numa função e adicioná-la como um Event Listener do evento fetch.

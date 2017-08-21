@@ -1,0 +1,5 @@
+Como podemos fazer um Service Worker rodar?
+
+É necessário registrar o Service Worker através da função navigator.serviceWorker.register.
+ 
+Um Service Worker é o mesmo para todas as abas que tiverem a app aberta. Não temos um Service Worker por aba, ele roda em paralelo com nossa app. Por isso, é preciso registrar um Service Worker e não carregar ele a todo momento numa tag <script>. Para registrar usamos a função navigator.serviceWorker.register.

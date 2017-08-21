@@ -1,0 +1,6 @@
+Após abrir o cache de imagens, como é possível procurarmos e recuperarmos uma ou mais repostas de arquivos que estavam dentro dele?
+
+
+É possível com a função cache.match.
+ 
+As funções cache.match e cache.matchAll são as responsáveis por procurar e recuperar as respostas de arquivos.
