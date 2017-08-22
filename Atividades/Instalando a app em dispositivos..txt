@@ -1,0 +1,27 @@
+Os usuários da app podem acessá-la através do navegador, porém, com um Web App Manifest bem configurado é possível instalar a app como se fosse nativa e ter acesso apenas clicando num ícone. Como o usuário consegue instalar a app no dispositivo no qual estiver acessando a app?
+
+
+
+
+Em algum momento o navegador pode sugerir a instalação ao usuário.
+ 
+Após passadas algumas vezes em que a app foi acessada pelo navegador, será perguntado para o usuário se ele deseja instalar a app.
+
+
+
+
+
+Ele pode procurar pela opção "Add to Home Screen" ou semelhante no navegador.
+ 
+A opção "Add to Home Screen" é a maneira com a qual o usuário pode forçar a instalação da app no dispositivo.
+
+
+
+As vezes ele não consegue instalar pois ainda não é possível em todos os browsers.
+ 
+Tudo que envolve PWAs ainda é muito recente e alguns navegadores ainda não suportam alguns detalhes como a instalação com Web App Manifest.
+
+
+É possível através do Dev Tools do navegador.
+ 
+É uma maneira possível, porém, focada em testar o código do Web App Manifest.

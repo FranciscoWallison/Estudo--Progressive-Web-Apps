@@ -1,0 +1,23 @@
+Quais são as informações mínimas que um manifest de aplicação precisa para que a app seja instalada?
+
+
+O nome da app.
+ 
+A propriedade name é responsável por isso e é obrigatória.
+
+
+
+Informação de como a app deve ser exibida: como uma aba do navegador, fullscreen ou totalmente separada (como se fosse uma app nativa).
+ 
+A propriedade display é responsável por isso e é obrigatória.
+
+
+
+Informações da imagem que será usada como ícone da app.
+ 
+A propriedade icons é responsável por isso e é obrigatória.
+
+
+A url principal onde a app será aberta quando acessada.
+ 
+A propriedade start_url é responsável por isso e é obrigatória.
