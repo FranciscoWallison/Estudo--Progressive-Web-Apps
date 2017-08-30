@@ -40,6 +40,12 @@ self.addEventListener("install", function(){
 	console.log("Instalou");	
 })
 
+/*
+	TO::DO
+'	Validar ser tem veção nova - verificar a const
+	Validar se tem conteudo novo na aplicação - 
+		criar uma variavel que verifique isso e atualize so memnte o conteudo novo e fazer as validações
+*/
 self.addEventListener("activate", function(){
 	caches.open("ceep-arquivos-" + verssao ).then(cache => {
 		cache.addAll(arquivos).then(cache => {
