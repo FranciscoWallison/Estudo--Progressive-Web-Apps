@@ -2,3 +2,9 @@
 
 http-server
 
+
+# Gerar icone
+
+```
+  https://realfavicongenerator.net/
+```
